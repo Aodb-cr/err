@@ -17,12 +17,11 @@ def predict(brand, screen_size, resolution_width, resolution_height):
     
     # Prepare the input array for prediction
     input_data = pd.DataFrame({
-        'Brand': [brand],
-        'Screen Size': [screen_size],
-        'Resolution (Width)': [resolution_width],
-        'Resolution (Height)': [resolution_height]
-    })
-    
+           'Brand': [brand],
+           'Screen Size': [screen_size],
+           'Resolution (Width)': [resolution_width],
+           'Resolution (Height)': [resolution_height]
+   })    
     # Perform the prediction
     prediction = model.predict(input_data)
     
